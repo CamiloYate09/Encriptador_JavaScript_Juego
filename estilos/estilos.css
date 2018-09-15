@@ -1,0 +1,141 @@
+* {
+
+box-sizing: border-box;
+
+}
+
+body{
+
+    margin: 0;
+    font-family: 'Cinzel', serif;
+    font-family: 'Orbitron', sans-serif;
+    font-family: 'Sedgwick Ave Display', cursive;
+    font-family: 'Monoton', cursive;
+    font-family: 'Oleo Script', cursive;
+
+    background-image: url(https://k60.kn3.net/taringa/D/4/1/6/3/2/gusty3491/23E.jpg);
+}
+
+ h1{
+
+    color: blue;
+    text-align: center;
+ }
+
+ .form-register{
+
+width: 100%;
+
+max-width: 1000px;
+
+margin: auto;
+background: #fff;
+border-radius: 18px; 
+
+ }
+
+ .form__titulo{
+
+background: deepskyblue;
+color: #fff;
+padding: 20px;
+text-align: center;
+font-weight: 90;
+font-size: 30px;
+border-top-left-radius: 7px;
+border-top-right-radius: 7px;
+border-bottom: 5px solid crimson;
+
+ }
+ .contenedor-inputs{
+
+    padding: 20px 30px;
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: space-between;
+
+
+
+ }
+ .input--100{
+    width: 100%;
+    
+
+
+ }
+ .input--1000{
+    width: 140%;
+
+ }
+ .input--10{
+
+    width:10%;
+    border-radius: 29px;
+    background-color: yellowgreen;
+ }
+
+ input{
+
+    margin-bottom: 15px;
+    padding: 15px;
+    font-size: 16px;
+    border-radius: 10px;
+    border: 3px solid red;
+ }
+
+
+ .btn-codificar{
+background: red;
+color: #fff;
+margin: 0;
+font-size: 17px;
+padding: 10px 40px;
+cursor: pointer;
+border-radius: 10px;
+position: relative;
+
+
+ }
+ .btn-codificar:active{
+
+    transform: scale(1.5);
+
+    
+    
+     }
+
+     .btn-decodificar{
+        background: blue;
+        color: #fff;
+        margin: 0;
+        font-size: 17px;
+        padding: 10px 40px;
+        cursor: pointer;
+        border-radius: 10px;
+        position: relative;
+        
+        
+         }
+         .btn-decodificar:active{
+            
+                transform: scale(1.5);
+            
+                
+                
+                 }
+
+ .etiqueta{
+
+text-align: center;
+font-size: 30px;
+height: 50;
+
+ }
+ .form__link{
+
+width: 100%;
+margin: 7px;
+font-size: 20px;
+text-align: center;
+
+ }

@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <!--FUENTE GOOGLE -->
+    <link href="https://fonts.googleapis.com/css?family=Cinzel|Monoton|Oleo+Script|Orbitron|Sedgwick+Ave+Display" rel="stylesheet">
+
+     <link rel="stylesheet" href="estilos/estilos.css">
+
+
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+
+
+    <!--ESTANDAR PARA BOOSTRAP -->
+
+    
+   
+       
+    
+    <title>Codificador</title>
+</head>
+<body>
+    
+    <!--ESTRUTURA BASE HTML -->
+    <!--codificador -->
+
+    <form action="" method="post" class="form-register">
+            <h1 class="form__titulo">Codificador</h1 >
+                <center>    <img src="img/abierto.png" alt="" width="70" height="70"/> </center>
+    
+     <div class="contenedor-inputs">
+            <label for="" class="etiqueta">Cadena a Cifrar</label>
+    <input type="text" id="principal" placeholder="Ingresa la cadena" class="input--100" required>
+    <label for="" class="etiqueta">Letra pista</label>
+    <select name="select" id="idLetra" placeholder="Letra pista" class="input--10" required>
+        <option value="1" selected>a</option> 
+        <option value="4" >b</option>
+        <option value="2">c</option>
+        <option value="6" >d</option>
+        <option value="3">e</option>
+        <option value="8" >f</option>
+        <option value="5">g</option>
+        <option value="10" >h</option>
+        <option value="7">i</option>
+        <option value="12" >j</option>
+        <option value="11">k</option>
+        <option value="14">l</option>
+        <option value="13" >m</option>
+        <option value="16">n</option>
+        <option value="17" >ñ</option>
+        <option value="18" >o</option>
+        <option value="19">p</option>
+        <option value="20" >q</option>
+        <option value="23">r</option>
+        <option value="22" >s</option>
+        <option value="29">t</option>
+        <option value="24">u</option>
+        <option value="31" >v</option>
+        <option value="28">w</option>
+        <option value="37" >x</option>
+        <option value="30">y</option>
+        <option value="41" >z</option>
+        <option value="32"> </option>
+          </select>
+    <br>
+    
+    <div class="btn-group" role="group" aria-label="Basic example">
+    <button type="submit" id="botonCodificar"  value="decodificar" class="btn-decodificar"      >Codificar</button>
+    <button type="reset" value="restablecer" class="btn-decodificar">Restablecer</button>
+    </div>
+    <br>
+    
+    <div>
+    <label for="" class="etiqueta">Cifrado</label>
+    <input id="resultadoCifrado" type="text" placeholder="Cifrado real" class="input--100" >
+    
+
+    <label for="" class="etiqueta">Entrega</label>
+    <input type="text" placeholder="Entrega al Contrincante" class="input--100" >
+
+   
+    </div>
+    <p class="form__link">Aldo Jose Yate --  Camilo Andres Yate 2017 <br> Diseño web</p>
+     </div>
+    </form>
+   <!--codificador -->
+
+
+
+
+
+      <!--decodificador -->
+      <form action="" method="post" class="form-register">
+            <h1 class="form__titulo">DeCodificador</h1 >
+                <center>    <img src="img/abierto.png" alt="" width="70" height="70"/> </center>
+    
+     <div class="contenedor-inputs">
+            <label for="" class="etiqueta">Codigos Cifrados</label>
+    <input type="text" id ="cadenaCifrada" placeholder="Ingresa la cadena" class="input--100" required>
+    <label for=""  class="etiqueta">Letra pista</label>
+    <select name="select" id="letraPistaII" placeholder="Letra pista" class="input--10" required>
+        <option value="1" selected>a</option> 
+        <option value="4" >b</option>
+        <option value="2">c</option>
+        <option value="6" >d</option>
+        <option value="3">e</option>
+        <option value="8" >f</option>
+        <option value="5">g</option>
+        <option value="10" >h</option>
+        <option value="7">i</option>
+        <option value="12" >j</option>
+        <option value="11">k</option>
+        <option value="14">l</option>
+        <option value="13" >m</option>
+        <option value="16">n</option>
+        <option value="17" >ñ</option>
+        <option value="18" >o</option>
+        <option value="19">p</option>
+        <option value="20" >q</option>
+        <option value="23">r</option>
+        <option value="22" >s</option>
+        <option value="29">t</option>
+        <option value="24">u</option>
+        <option value="31" >v</option>
+        <option value="28">w</option>
+        <option value="37" >x</option>
+        <option value="30">y</option>
+        <option value="41" >z</option>
+        <option value="32"> </option>
+          </select>
+    <br>
+    
+    <div class="btn-group" role="group" aria-label="Basic example">
+    <button type="submit" id="decodificar" value="decodificar" class="btn-decodificar">Decodificar</button>
+    <button type="reset" value="restablecer" class="btn-decodificar">Restablecer</button>
+    </div>
+    <br>
+    
+    <div>
+    <label for="" class="etiqueta">Palabra Original</label>
+    <input type="text" id="palabraOriginal" placeholder="Cifrado real" class="input--100" required>
+    
+
+    <label for="" class="etiqueta">Primer filtro</label>
+    <input type="text" placeholder="Decimales 2 posicion" class="input--100" required>
+
+    <label for="" class="etiqueta">Segundo filtro</label>
+    <input type="text" placeholder="Decimales 3 posicion" class="input--100" required>
+
+    <label for="" class="etiqueta">Tercer filtro</label>
+    <input type="text" placeholder="Decimales 4 posicion" class="input--100" required>
+    </div>
+    <p class="form__link">Aldo Jose Yate --  Camilo Andres Yate 2017 <br> Diseño web</p>
+     </div>
+    </form>
+         <!--decodificador -->
+
+<!--ESTRUTURA BASE HTML -->
+
+
+    <!--JAVASCRIPT -->
+    <script src="js/codigo.js">
+    
+    
+    </script>
+    <!--JAVASCRIPT -->
+</body>
+</html>
